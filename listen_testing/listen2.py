@@ -3,12 +3,12 @@ import requests
 import urllib.parse
 from datetime import datetime
 from dotenv import load_dotenv
-from flask import Flask, redirect, request, jsonify, session
+from flask import Flask, redirect, render_template, request, jsonify, session
 load_dotenv()
 
 CLIENT_ID = os.getenv("CLIENT_ID2")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET2")
-REDIRECT_URI = "http://localhost:5000/callback"
+REDIRECT_URI = "http://localhost:8000/callback"
 
 AUTH_URL = "https://accounts.spotify.com/authorize"
 TOKEN_URL = "https://accounts.spotify.com/api/token"
@@ -19,7 +19,7 @@ app = Flask(__name__)
 app.secret_key=CLIENT_SECRET
 @app.route("/")
 def index():
-    return "listen testing <a href='/login'>Login</a>"
+    return render_template('index.html')
 
 @app.route('/login')
 def login():
@@ -70,13 +70,20 @@ def get_playlists():
         return redirect('/refresh-token')
     
     headers = {
-        'Authorization': f'Bearer {session['access_token']}'
+        'Authorization': 'Bearer ' + session['access_token']
     }
     
     response = requests.get(API_BASE_URL + 'me/playlists', headers=headers)
-    playlists = response.json()
+    playlists_info = response.json() 
     
-    return jsonify(playlists)
+    playlist_count = playlists_info["total"]
+    playlists = playlists_info["items"]
+    info = ''
+    for p in playlists:
+        info += p["name"]
+        info += ', '
+
+    return info
 
 @app.route('/refresh-token')
 def refresh_token():
@@ -100,4 +107,4 @@ def refresh_token():
         return redirect('/playlists')
     
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', debug=True, port=8000, threaded=True)

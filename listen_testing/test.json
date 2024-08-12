@@ -1,0 +1,102 @@
+{
+    "href": "https://api.spotify.com/v1/users/blubberyyew/playlists?offset=0&limit=100",
+    "items": [
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/2WiYfWzhfsY9Z7ui5ugHtu"
+        },
+        "href": "https://api.spotify.com/v1/playlists/2WiYfWzhfsY9Z7ui5ugHtu",
+        "id": "2WiYfWzhfsY9Z7ui5ugHtu",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://mosaic.scdn.co/640/ab67616d00001e02550e9a76a91f0dc5793493b0ab67616d00001e026839d577b49ca74ce11c817aab67616d00001e02ac2ac38f383d566d1aa8f2b3ab67656300005f1faca688884b70eb3c3ed7fc16",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://mosaic.scdn.co/300/ab67616d00001e02550e9a76a91f0dc5793493b0ab67616d00001e026839d577b49ca74ce11c817aab67616d00001e02ac2ac38f383d566d1aa8f2b3ab67656300005f1faca688884b70eb3c3ed7fc16",
+            "width": 300
+          },
+          {
+            "height": 60,
+            "url": "https://mosaic.scdn.co/60/ab67616d00001e02550e9a76a91f0dc5793493b0ab67616d00001e026839d577b49ca74ce11c817aab67616d00001e02ac2ac38f383d566d1aa8f2b3ab67656300005f1faca688884b70eb3c3ed7fc16",
+            "width": 60
+          }
+        ],
+        "name": "testing for listen",
+        "owner": {
+          "display_name": "blubberyyew",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/blubberyyew"
+          },
+          "href": "https://api.spotify.com/v1/users/blubberyyew",
+          "id": "blubberyyew",
+          "type": "user",
+          "uri": "spotify:user:blubberyyew"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "AAAADWttMJrpYIg3N9ZkdDHnmoYJDbnT",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/2WiYfWzhfsY9Z7ui5ugHtu/tracks",
+          "total": 11
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:2WiYfWzhfsY9Z7ui5ugHtu"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/6rugm6nBUmUCKefaeMtWcR"
+        },
+        "href": "https://api.spotify.com/v1/playlists/6rugm6nBUmUCKefaeMtWcR",
+        "id": "6rugm6nBUmUCKefaeMtWcR",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://mosaic.scdn.co/640/ab67616d00001e02c56dcd1015c1ffb8c56d2988ab67616d00001e02e31a279d267f3b3d8912e6f1ab67616d00001e02f7db43292a6a99b21b51d5b4ab67616d00001e02f907de96b9a4fbc04accc0d5",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://mosaic.scdn.co/300/ab67616d00001e02c56dcd1015c1ffb8c56d2988ab67616d00001e02e31a279d267f3b3d8912e6f1ab67616d00001e02f7db43292a6a99b21b51d5b4ab67616d00001e02f907de96b9a4fbc04accc0d5",
+            "width": 300
+          },
+          {
+            "height": 60,
+            "url": "https://mosaic.scdn.co/60/ab67616d00001e02c56dcd1015c1ffb8c56d2988ab67616d00001e02e31a279d267f3b3d8912e6f1ab67616d00001e02f7db43292a6a99b21b51d5b4ab67616d00001e02f907de96b9a4fbc04accc0d5",
+            "width": 60
+          }
+        ],
+        "name": "Chill",
+        "owner": {
+          "display_name": "blubberyyew",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/blubberyyew"
+          },
+          "href": "https://api.spotify.com/v1/users/blubberyyew",
+          "id": "blubberyyew",
+          "type": "user",
+          "uri": "spotify:user:blubberyyew"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "AAAAitjHLCVGZ7jwAaXGPNNo1AIVXc5G",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/6rugm6nBUmUCKefaeMtWcR/tracks",
+          "total": 18
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:6rugm6nBUmUCKefaeMtWcR"
+      }
+    ],
+    "limit": 100,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total": 2
+  }
